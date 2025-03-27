@@ -9,23 +9,10 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#" class="logo">TW</a>
-            <ul class="nav-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
+    <!-- Navbar -->
+    <navbar> <div id ="navbar"></div> </navbar>
+    
+    
     <!-- Description Section -->
     <section class="hero">
         <div class="container">
@@ -47,7 +34,7 @@
                 <div class="project-info">
                     <h3>The Asteroid Outpost - Game</h3>
                     <p>2D Game Development</p>
-                    <a href="#" class="btn btn-small btn-primary">View Project</a>
+                    <a href="asteroidOutpost.html" class="btn btn-small btn-primary">View Project</a>
                 </div>
             </div>
             
@@ -81,28 +68,26 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2 class="section-title">Get In Touch</h2>
-        <form class="contact-form">
+        <form action="https://formspree.io/f/xvgkbglo" method="POST" class="contact-form">
+            
             <div class="form-group">
-                <input type="text" placeholder="Your Name" required>
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <input type="email" placeholder="Your Email" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-                <input type="text" placeholder="Subject">
+                <input type="text" name="subject" placeholder="Subject">
             </div>
             <div class="form-group">
-                <textarea placeholder="Your Message" required></textarea>
+                <textarea name="message" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Tom Wilderspin. All rights reserved.</p>
-        <a href="#" class="back-to-top">↑</a>
-    </footer>
-
-</body>
+     <footer> <div id ="footer"></div></footer>
+    
+</body> 
 </html>

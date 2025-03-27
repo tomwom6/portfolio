@@ -28,3 +28,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Load navbar and footer html into the pages.
+fetch('resources/navbar.html')
+.then(response => response.text())
+.then(html => document.getElementById('navbar').innerHTML = html);
+fetch('resources/footer.html')
+.then(response => response.text())
+.then(html => document.getElementById('footer').innerHTML = html);
