@@ -82,3 +82,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Smooth scrolling for "Back to Top" button
+document.querySelector('.back-to-top').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling to the top
+    });
+});
+
