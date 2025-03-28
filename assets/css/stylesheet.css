@@ -1,4 +1,4 @@
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -40,6 +40,10 @@
             text-align: center;
             padding: 2rem;
             width: 100%;
+            position: relative;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
         }
         
         
@@ -297,8 +301,9 @@
         }
         
         .form-group textarea {
+            width: 100%; /* Use full width of the container */
+            max-width: 100%; /* Prevent overflow */
             height: 150px;
-            width: 500px;
             resize: vertical;
         }
         
