@@ -5,7 +5,7 @@ if (window.location.pathname === "/index.html") {
     document.getElementById('navbar').innerHTML = `
 <nav>
     <div class="nav-container">
-        <a href="https://tomwom6.github.io/portfolio/index.html" class="logo">TW</a>
+        <a href="https://tomwdev.com/portfolio/index.html" class="logo">TW</a>
         <ul class="nav-links">
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
@@ -32,11 +32,11 @@ else {
     document.getElementById('navbar').innerHTML = `
 <nav>
     <div class="nav-container">
-        <a href="https://tomwom6.github.io/portfolio/index.html" class="logo">TW</a>
+        <a href="https://tomwdev.com/portfolio/index.html" class="logo">TW</a>
         <ul class="nav-links">
-            <li><a href="https://tomwom6.github.io/portfolio/index.html#projects">Projects</a></li>
-            <li><a href="https://tomwom6.github.io/portfolio/index.html#about">About</a></li>
-            <li><a href="https://tomwom6.github.io/portfolio/index.html#contact">Contact</a></li>
+            <li><a href="https://tomwdev.com/portfolio/index.html#projects">Projects</a></li>
+            <li><a href="https://tomwdev.com/portfolio/index.html#about">About</a></li>
+            <li><a href="https://tomwdev.com/portfolio/index.html#contact">Contact</a></li>
         </ul>
         <div class="hamburger">
             <span></span>
