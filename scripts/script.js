@@ -33,11 +33,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.getElementById('navbar').innerHTML = `
 <nav>
     <div class="nav-container">
-        <a href="/index.html" class="logo">TW</a>
+        <a href="https://tomwom6.github.io/portfolio/index.html" class="logo">TW</a>
         <ul class="nav-links">
-            <li><a href="/index.html#projects">Projects</a></li>
-            <li><a href="/index.html#about">About</a></li>
-            <li><a href="/index.html#contact">Contact</a></li>
+            <li><a href="https://tomwom6.github.io/portfolio/index.html#projects">Projects</a></li>
+            <li><a href="https://tomwom6.github.io/portfolio/index.html#about">About</a></li>
+            <li><a href="https://tomwom6.github.io/portfolio/index.html#contact">Contact</a></li>
         </ul>
         <div class="hamburger">
             <span></span>
