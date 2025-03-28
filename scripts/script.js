@@ -30,9 +30,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Load navbar and footer html into the pages.
-fetch('/pages/resources/navbar.html')
-.then(response => response.text())
-.then(html => document.getElementById('navbar').innerHTML = html);
-fetch('/pages/resources/navbar.html')
-.then(response => response.text())
-.then(html => document.getElementById('footer').innerHTML = html);
+fetch('https://tomwom6.github.io/portfolio/pages/resources/navbar.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('navbar').innerHTML = html);
+
+fetch('https://tomwom6.github.io/portfolio/pages/resources/footer.html') // Corrected to load footer.html
+    .then(response => response.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
