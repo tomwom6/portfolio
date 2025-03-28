@@ -68,11 +68,17 @@ if (hamburger && navLinks) {
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent the default behavior (page reload)
+        const targetId = this.getAttribute('href').substring(1); // Get the target ID
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth', // Smooth scrolling
+                block: 'start' // Align to the top of the section
+            });
+        }
     });
 });
 
